@@ -12,7 +12,7 @@
     "clean": "rm -r esm dist",
     "build:esm": "babel src --out-dir esm --copy-files --no-copy-ignored",
     "build:cjs": "babel src --out-dir dist --copy-files --no-copy-ignored --env-name cjs",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs"
+    "build": "npm run build:esm && npm run build:cjs"
   },
   "keywords": [
     "react",
@@ -39,5 +39,7 @@
     "react-dom": "^16.14.0",
     "react-icons": "^2.2.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "core-js": "^3.28.0"
+  }
 }
